@@ -1,0 +1,5 @@
+name: FightCraft
+version: 1.0
+author: Pogo
+main: me.pogo.fightcraft.FightCraft
+description: A fighting game.
