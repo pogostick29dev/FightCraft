@@ -15,7 +15,7 @@ import java.util.List;
        Author: Milutinke (ByM)
 
        Example:
-       private ItemStackBuilder Item;
+       public ItemStack Item;
        Item = new ItemStackBuilder(MATERIAL.WHEAT).withAmmount(64).withName("Wheat :)").build();
 */
 
