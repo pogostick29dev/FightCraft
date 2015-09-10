@@ -1,5 +1,7 @@
 package me.pogo.fightcraft;
 
+import java.text.DecimalFormat;
+
 import org.bukkit.entity.Player;
 
 public class GamePlayer {
@@ -45,7 +47,9 @@ public class GamePlayer {
 		// Update database.
 	}
 	
-	public double getKDR() {
-		return kills / deaths;
+	public String getKDR() {
+		double kdr = deaths > 0 ? kills / deaths : -1.0D;
+		DecimalFormat df = new DecimalFormat("##.##");
+		return df.format(kdr);
 	}
 }
