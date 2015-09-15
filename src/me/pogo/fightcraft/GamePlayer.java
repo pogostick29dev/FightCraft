@@ -46,6 +46,10 @@ public class GamePlayer {
 	}
 	
 	public double getKDR() {
+		if (deaths == 0) {
+			return kills;
+		}
+		
 		return kills / deaths;
 	}
 }
