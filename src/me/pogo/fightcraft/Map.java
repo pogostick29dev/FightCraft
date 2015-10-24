@@ -47,6 +47,10 @@ public class Map {
 		}
 	}
 	
+	public int getSpawnLocationCount() {
+		return spawnLocations.size();
+	}
+	
 	public Location getNextSpawnLocation() {
 		if (spawnIndex >= spawnLocations.size()) {
 			return null;
