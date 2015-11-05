@@ -21,7 +21,7 @@ public class Countdown extends BukkitRunnable {
 		}
 		
 		else {
-			if (i == 30 || i == 15 || i == 10 || i == 5 || i == 4 || i == 3 || i == 2 || i == 1) {
+			if (i == 30 || i == 15 || i == 10 || i == 5 || i == 4 || i == 3 || i == 2 || i == 1) { //wtf is this
 				game.broadcast(ChatColor.GOLD + "The fight will begin in " + i + " seconds.");
 			}
 			
