@@ -19,12 +19,10 @@ public class Countdown extends BukkitRunnable {
 			cancel();
 			game.start();
 		}
-		
 		else {
-			if (i == 30 || i == 15 || i == 10 || i == 5 || i == 4 || i == 3 || i == 2 || i == 1) {
-				game.broadcast(ChatColor.GOLD + "The fight will begin in " + i + " seconds.");
-			}
-			
+			String plural = i == 1 ? "" : "s";
+			if(i % 10 == 0 || i <= 5)
+			    game.broadcast(ChatColor.GOLD + "The fight will begin in " + i + " second" + plural + ".");
 			i--;
 		}
 	}
